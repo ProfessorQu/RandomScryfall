@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form method="POST" class="search">
+    <input type="text" name="query" placeholder="Query" />
+    <input type="number" name="amount" placeholder="Amount" min="1" max="10" />
+    <button type="submit">Submit</button>
+</form>
+{% endblock %}
