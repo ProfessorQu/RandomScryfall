@@ -17,7 +17,7 @@ form.addEventListener('submit', (e) => {
     for (let i = 0; i < amount; i++) {
         get_random_card(query.replace(" ", "+"))
             .then(card => {
-                const html = '<a href=' + card['scryfall_uri'] + ' target="_blank"><img src=' + card['image_uris']['normal'] + "/></a>";
+                const html = `<a href=` + card['scryfall_uri'] + ` target="_blank"><img src=` + card['image_uris']['normal'] + ` class="img-fluid"/></a>`;
 
                 cards.innerHTML += html;
             })
